@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xtream Codes Modern - Frontend</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #fff; }
+        
+        .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 20px; }
+        .logo { font-size: clamp(48px, 8vw, 96px); font-weight: 900; letter-spacing: -0.04em; margin-bottom: 24px; }
+        .logo span { color: #ff0000; }
+        
+        .tagline { font-size: clamp(18px, 3vw, 24px); color: #888; max-width: 600px; line-height: 1.6; margin-bottom: 48px; }
+        
+        .cta-group { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+        .btn { padding: 16px 32px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+        .btn-primary { background: #ff0000; color: #fff; border: none; }
+        .btn-primary:hover { background: #e60000; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,0,0,0.3); }
+        .btn-secondary { background: transparent; color: #fff; border: 1px solid #333; }
+        .btn-secondary:hover { border-color: #ff0000; }
+        
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 1000px; width: 100%; margin-top: 80px; }
+        .feature { background: #111; border: 1px solid #222; border-radius: 16px; padding: 32px; transition: transform 0.2s, border-color 0.2s; }
+        .feature:hover { transform: translateY(-4px); border-color: #ff0000; }
+        .feature-icon { font-size: 40px; margin-bottom: 16px; }
+        .feature h3 { font-size: 18px; margin-bottom: 12px; }
+        .feature p { color: #888; line-height: 1.6; }
+        
+        .footer { margin-top: 80px; padding: 40px 20px; text-align: center; color: #555; font-size: 14px; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+    <main class="hero">
+        <div class="logo">X<span>tream</span> Codes</div>
+        <p class="tagline">The modern, rebuilt streaming platform. Fast, secure, and ready for Ubuntu 22.04/24.04 LTS.</p>
+        
+        <div class="cta-group">
+            <a href="/admin" class="btn btn-primary">Admin Panel</a>
+            <a href="https://github.com/your-org/xtream-modern" class="btn btn-secondary" target="_blank">View Source</a>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <h3>Modern Stack</h3>
+                <p>Built with Python 3, FastAPI, PHP 8, MariaDB, and Nginx RTMP. No legacy dependencies.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure by Default</h3>
+                <p>JWT authentication, prepared statements, input sanitization, and security headers.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🐳</div>
+                <h3>Container Ready</h3>
+                <p>One-command deployment with Docker Compose. Runs on any modern Linux server.</p>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            Xtream Codes Modern v2.0.0 — Rebuilt for modern infrastructure
+        </footer>
+    </main>
+</body>
+</html>
